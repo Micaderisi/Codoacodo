@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\USUARIO MICA\Documents\Cursos\Codo a Codo\TPO Desarrollo Web\estilos.css">
+    <link rel="icon" href="D:\USUARIO MICA\Documents\Cursos\Codo a Codo\TPO Desarrollo Web/jar.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> ESTO VA ACA? O EN EL BODY? ES PARA HACERLO RESPONSIVE
+<title id="solapa">El Arca</title>     FALTA QUE SE VEA ESTA PARTE EN LA PAGINA
+</head>
+REVISAR MARGENES DE PAGINA
+
+<body>   
+    <header> CÓMO PUEDO HACER PARA QUE LA IMAGEN ABARQUE TODO EL ANCHO DEL VIEWPORT??
+      <img src="merm gourmet - arriba.jpg" alt="encabezadoarriba" width="1345px" height="500px">  
+      <br>
+        <h1> El Arca <i> Gourmet </i> </h1>
+      <br>
+      <img src="merm gourmet - abajo.jpg" alt="encabezadoabajo" style="max-width:100%;height:auto;">
+      <br>
+      <i id="flechazo"> Un flechazo al paladar</i> NO ME CENTRA ESTE SLOGANNN
+    </header>
+<br><br>
+<!-- Enlaces ancla --> no me envía a los sitios web!!
+<a href="TPDiseñoWeb.html#Quienessomos">Quienes Somos</a>
+<a href="TPDiseñoWeb.html#Nuestrasvariedades">Nuestras Variedades</a>
+<a href="TPDiseñoWeb.html#Dóndeencontrarnos">Dónde Encontrarnos</a>
+<a href="TPDiseñoWeb.html#Cómocontactarnos">Cómo contactarnos</a>
+
+<br><br><br><br>
+
+ <div class="flex-container">
+    <h3 class= "subtitulos">Quienes somos</h3>
+</div>
+<div>  
+    <p>Somos una pyme ubicada en San Rafael, provincia de Mendoza. Nos caracteriza la autonomía, ya que producimos la materia prima que luego utlizamos para la producción de nuestras mermeladas. Todos nuestros productos tienen certificación orgánica. </p>
+</div> 
+
+<br>
+<!-- Borrar esto si el carrusel queda bien-->
+<div class="flex-container">
+        <h3 class= "subtitulos">Nuestras variedades</h3>
+</div>
+<div> 
+    <p>
+        <ul>
+            <li id="variedades" type="disc">Tomate</li>
+            <li id="variedades" type="disc">Higo</li>
+            <li id="variedades" type="disc">Frambuesa</li>
+            <li id="variedades" type="disc">Durazno</li>
+        </ul>
+    </p>
+</div>
+
+Carusel de
+<!-- hasta aca -->
+
+<!-- Carousel PREGUNTAR SI LO QUE ESSTÁ FALLANDO EN EL JS -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="11.jpg" class="d-block w-100" alt="Higo"  width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="8718.jpg.webp" class="d-block w-100" alt="Frambuesa" width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="mermelada_de_tomate_con_albahaca-jpeg.jpg" class="d-block w-100" alt="Tomate" width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="Mermelada-de-durazno-1.jpg" class="d-block w-100" alt="Durazno" width="25%" height="25%">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+<!-- Acá termina el carousel -->
+
+<br><br>
+
+<div class="flex-container">
+    <h3 class= "subtitulos">Dónde encontrarnos</h3>
+</div>
+<div id="iframe">
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1649553862281!6m8!1m7!1sY3SYeH2NzLXNsSX60VKMBw!2m2!1d-34.67197287302675!2d-68.10898242314418!3f167.02787865719364!4f0!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="290" height="250"></iframe>"
+</div>
+<br><br>
+
+<div class="flex-container">
+        <h3 class= "subtitulos"> Cómo contactarnos </h3>
+</div>
+        <br><br><br>
+        <form action="/action_page.php" id="formulario">
+            <label for="completename">Nombre<textarea name="nombre" size="30" maxlength= "20"></textarea></label><br>
+            <label for="texto">Consulta<textarea name="comentario" rows="3" cols="40">Escribe tu consulta</textarea></label><br>
+            <label for="completename">Dirección de correo<textarea name="correoelectronico" rows="10" cols="40">Dejanos tu correo electrónico para poder responder todas tus dudas</textarea></label><br>
+            <input type="submit" value="Submit"><br><br>
+        </form>
+
+</body>
+</html>
